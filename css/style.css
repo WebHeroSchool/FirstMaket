@@ -57,7 +57,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;
+  color: #000;
   text-decoration: none;
   transition: opacity 1s;
 }
@@ -65,21 +65,10 @@ body {
   margin-right: 0;
 }
 
-/* .menu__item_active::after {
-  position: absolute;
-  display: block;
-  content: "";
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: #0056ec;
-  opacity: 0;
-  transition: opacity 0.5s;
-} */
 .menu__item:hover {
   opacity: 0.5;
 }
-.menu__item:hover:after {
+.menu__item:hover::after {
   position: absolute;
   display: block;
   content: "";
@@ -89,7 +78,7 @@ body {
   background: #0056ec;
 }
 
-.menu__item:hover:after,
-.menu__item_active:after {
+.menu__item:hover::after,
+.menu__item_active::after {
   opacity: 1;
 }
