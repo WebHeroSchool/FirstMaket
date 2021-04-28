@@ -7,22 +7,25 @@ body {
 .wrapper {
   margin: auto;
   width: 80%;
+  max-height: 1080px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 200px;
+  margin-bottom: 130px;
 }
 
 .logo {
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font-family: "pt_serifregular", Arial, Helvetica, sans-serif;
+  /* padding: 110px 0;
+  padding-left: 44px; */
+  font-family: "pt_serifbold", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 24px;
-  line-height: 31px;
+  line-height: 32px;
 }
 
 .logo__circle {
@@ -49,6 +52,7 @@ body {
 .menu {
   display: flex;
   align-items: center;
+  padding-top: 7px;
 }
 
 .menu__item {
@@ -63,7 +67,7 @@ body {
   transition: opacity 1s;
 }
 .menu__item:last-child {
-  margin-right: 0;
+  margin-right: 1px;
 }
 
 .menu__item:hover {
@@ -86,27 +90,28 @@ body {
 }
 
 .main {
-  padding: 0 63% 280px 0;
+  padding: 76px 63% 150px 0;
   background: url(/img/Frame.svg);
   background-repeat: no-repeat;
   background-position: top right;
 }
 
 .main__title {
-  margin: 0 0 40px 0;
+  margin: 0 0 35px 0;
   font-weight: bold;
   font-size: 66px;
   line-height: 87px;
-  font-family: "pt_serifregular", Arial, Helvetica, sans-serif;
+  font-family: "pt_serifbold", Arial, Helvetica, sans-serif;
 }
 
 .main__title-text_higglight {
-  background: #ecf3ff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, #ecf3ff 15%);
 }
 
 .main__subtitle {
-  margin: 0 0 41px 0;
+  margin: 0 0 42px 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding-right: 15%;
   font-size: 22px;
   line-height: 26px;
 }
@@ -116,7 +121,7 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 21px;
-  padding: 14px 16px;
+  padding: 18px 34px 18px 23px;
   background: #0056ec;
   color: #fff;
   text-decoration: none;
